@@ -39,6 +39,15 @@ class UserRepository extends ServiceEntityRepository
         }
     }
 
+    public function findAllButMe(User $user)
+    {
+        return $this->createQueryBuilder('user')
+            ->andWhere('user.username != :val')
+            ->setParameter('val', $user->getUsername())
+            ->getQuery()
+            ->getResult();
+    }
+
 //    /**
 //     * @return User[] Returns an array of User objects
 //     */
