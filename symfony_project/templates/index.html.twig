@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue sur UpToShare{% endblock %}
+
+{% block body %}
+    <header style="text-align: center">
+        <h1 class="home-slogan font-normal text-center mb-5">UpToShare<br/>
+            <b class="font-medium"></b>
+        </h1>
+        <h3>Le lieu de partage ultime</h3>
+    </header>
+    {% include 'app/Connexion.html.twig' %}
+{% endblock %}
