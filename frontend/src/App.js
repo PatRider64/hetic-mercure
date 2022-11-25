@@ -13,6 +13,8 @@ function App() {
             <div className="row">
                 <Sidebar/>
                 <div className="col">
+                    <h1 className="home-slogan font-normal text-center mb-5">UpToShare</h1>
+                    <h2 className="font-normal text-center mb-5">Le lieu de partage ultime</h2>
                     <Routes>
                         <Route path={'/'} element={
                             <NeedAuth>

@@ -45,7 +45,8 @@ export default function Login() {
                 <input type="password" className="form-control" id="password" placeholder="Entrer le mot de passe" onChange={handlePassword}
                        value={password}/>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <a href="#">Vous n'avez pas de compte, inscrivez-vous ici</a>
+            <button type="submit" className="btn btn-primary">Se connecter</button>
         </form>
     )
 }
