@@ -30,7 +30,7 @@ class ChatController extends AbstractController
         if (!$topicHelper->isUserInThisTopic($user->getId(), $topic)) {
             return $this->json([
                 'status' => 0,
-                'error' => "This user doesn't belong to this topic"
+                'error' => "Cet utilisateur n'appartient pas à ce chat"
             ], Response::HTTP_UNPROCESSABLE_ENTITY);
         }
 
@@ -62,7 +62,7 @@ class ChatController extends AbstractController
             if (!$topicHelper->isUserInThisTopic($user->getId(), $request->request->get('topic'))) {
                 return $this->json([
                     'status' => 0,
-                    'error' => "This user doesn't belong to this topic"
+                    'error' => "Cet utilisateur n'appartient pas à ce chat"
                 ], Response::HTTP_UNPROCESSABLE_ENTITY);
             }
 
