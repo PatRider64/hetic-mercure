@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import NeedAuth from "./Auth/NeedAuth";
+import Home from "./Component/Home";
+import Sidebar from "./Component/Sidebar";
+import ChatRoom from "./Component/ChatRoom";
+import Login from "./Auth/Login";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className="row">
+                <Sidebar/>
+                <div className="col">
+                    <Routes>
+                        <Route path={'/'} element={
+                            <NeedAuth>
+                                <Home/>
+                            </NeedAuth>
+                        }/>
+                        <Route path='/login' element={<Login/>}/>
+                        <Route path='/chat/:topic' element={
+                            <NeedAuth>
+                                <ChatRoom/>
+                            </NeedAuth>
+                        }/>
+                    </Routes>
+                </div>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
