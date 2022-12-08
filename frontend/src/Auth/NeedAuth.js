@@ -4,11 +4,11 @@ import {useContext} from "react";
 
 export default function NeedAuth(props) {
     let location = useLocation();
-    const [loggedUser, setLoggedUser] = useContext(userContext);
+    // const [loggedUser, setLoggedUser] = useContext(userContext);
 
-    if (loggedUser) {
-        return props.children;
-    } else {
-        return <Navigate to='/login' state={{from: location}}/>
-    }
+    //if (loggedUser) {
+    //    return props.children;
+    //} else {
+    //    return <Navigate to='/login' state={{from: location}}/>
+    //}
 }

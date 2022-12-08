@@ -24,7 +24,6 @@ class ChatController extends AbstractController
                                     PrivateTopicHelper $topicHelper,
                                     string             $topic): JsonResponse
     {
-        /** @var $user User */
         $user = $this->getUser();
 
         if (!$topicHelper->isUserInThisTopic($user->getId(), $topic)) {
@@ -46,7 +45,6 @@ class ChatController extends AbstractController
                                    EntityManagerInterface $entityManager,
                                    PrivateTopicHelper     $topicHelper): JsonResponse
     {
-        /** @var $user User */
         $user = $this->getUser();
         $chat = $chatRepository->findOneBy(['topic' => $request->request->get('topic')]);
 

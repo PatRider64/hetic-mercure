@@ -4,14 +4,14 @@ export default function useGetUserList() {
     const storedUser = useSelector(store => store.SigninReducer);
 
     return function () {
-        return fetch(`https://localhost:8245/user-list`, {
+        return fetch(`http://localhost:8245/user-list`, {
             method: 'GET',
-            credentials: "include",
-            mode: "cors",
+            credentials: 'include',
+            mode: 'cors',
             headers: {
-                'Authorization': `Basic ${storedUser}`
+                'Authorization': `Bearer ${storedUser}`
             }
         })
-            .then(res => res.json())
+        .then(res => res.json());
     }
 }

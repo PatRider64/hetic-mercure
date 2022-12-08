@@ -28,7 +28,6 @@ class UserController extends AbstractController
     #[Route('/login', name: 'user_login')]
     public function login(string $appSecret): JsonResponse
     {
-        /** @var $user ?User */
         $user = $this->getUser();
 
         if (null === $user) {

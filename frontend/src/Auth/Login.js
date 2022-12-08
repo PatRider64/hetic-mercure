@@ -11,8 +11,9 @@ export default function Login() {
     const getJWT = useGetJWT();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [loggedUser, setLoggedUser] = useContext(userContext);
- 
+    //const [loggedUser, setLoggedUser] = useContext(userContext);
+    const [loggedUser, setLoggedUser] = useState('dsdsd');
+
     const handleUsername = (e) => {
       setUsername(e.target.value);
     }

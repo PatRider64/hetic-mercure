@@ -11,23 +11,18 @@ export default function Sidebar() {
             <hr/>
             <ul className="nav nav-pills flex-column mb-auto">
                 <li className="nav-item">
-                    <NavLink to="/" className="nav-link text-white">
-                        Liste des utilisateurs
+                    <NavLink to="/user-list" className="nav-link text-white">
+                        User List
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/login" className="nav-link text-white">
+                        Se connecter
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="account" className="nav-link text-white">
+                    <NavLink to="/account" className="nav-link text-white">
                         Profil
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="invoice" className="nav-link text-white">
-                        Invoice
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="admin" className="nav-link text-white">
-                        Admin
                     </NavLink>
                 </li>
             </ul>

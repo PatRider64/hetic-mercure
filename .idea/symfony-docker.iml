@@ -6,6 +6,13 @@
       <excludeFolder url="file://$MODULE_DIR$/symfony_project/vendor/stof/doctrine-extensions-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/symfony_project/vendor/behat/transliterator" />
       <excludeFolder url="file://$MODULE_DIR$/symfony_project/vendor/gedmo/doctrine-extensions" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony_project/vendor/symfony/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony_project/vendor/phpstan/phpdoc-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony_project/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony_project/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony_project/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony_project/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony_project/vendor/nelmio/cors-bundle" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
